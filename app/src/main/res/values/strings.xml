@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Campus Discovery</string>
+    <string name="welcome_header">See what\'s happening at Georgia Tech right now.</string>
+    <string name="welcome_button">Explore</string>
+    <string name="login_screen_header">Fill spaces below to get started</string>
+    <string name="name_text_input">Please enter your name</string>
+    <string name="email_text_input">example@email.com</string>
+    <string name="login_screen_name">Name</string>
+    <string name="login_screen_email">Email</string>
+    <string name="login_screen_categories">Choose what best describes you</string>
+
+    <string name="organizer_radio_button">Organizer</string>
+    <string name="user_radio_button">User</string>
+    <string name="admin_radio_button">Admin</string>
+
+    <string name="login_button">Login</string>
+
+    <string name="event_subject">Name of Event</string>
+    <string name="event_subject_hint">Enter event name (e.g. HackGT 9)</string>
+    <string name="event_capacity">Event Capacity</string>
+    <string name="event_capacity_hint">Enter the maximum event capacity</string>
+    <string name="event_location_hint">Enter a building room number (e.g. 1000)</string>
+    <string name="event_info_hint">Enter the event information</string>
+    <string name="event_location">Location</string>
+    <string name="event_date">Date</string>
+    <string name="event_time">Time</string>
+    <string name="event_description">Description</string>
+    <string name="event_save_button">Save</string>
+    <string name="event_delete_button">Delete</string>
+
+    <string name="event_viewer_edit_button">Edit</string>
+    <string name="event_viewer_attendeelist_button">Attendees</string>
+    <string name="event_viewer_maygo_attendeelist_button">May Go</string>
+    <string name="event_viewer_cancel_rsvp_button">Cancel RSVP</string>
+    <string name="event_viewer_rsvp_button">RSVP</string>
+    <string name="event_viewer_mightgo_button">I Might Go</string>
+    <string name="event_editor_date_edit_text">Click to pick a date</string>
+    <string name="event_editor_time_edit_text">Click to pick a time</string>
+
+    <string name="setting_update_button">Update</string>
+    <string name="setting_back_button">Back</string>
+    <string name="setting_logout_button">Logout</string>
+
+    <string name="invite_button">Invite</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">Campus Discovery Map feature requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for Campus Discovery Map feature.</string>
+
+
+    <array name="building_list">
+        <item>
+            {
+            "id": 0,
+            "name": \"Gilbert Hillhouse Boggs Building\",
+            "lat": 33.77594835880452,
+            "lon": -84.39977468811033
+            }
+        </item>
+        <item>
+            {
+            "id": 1,
+            "name": \"Bunger-Henry Building\",
+            "lat": 33.775895349060065,
+            "lon": -84.39835903228675
+            }
+        </item>
+        <item>
+            {
+            "id": 2,
+            "name": \"Clough Undergraduate Learning Commons\",
+            "lat": 33.77512539681722,
+            "lon": -84.39642553043979
+            }
+        </item>
+        <item>
+            {
+            "id": 3,
+            "name": \"College of Computing\",
+            "lat": 33.77783307556468,
+            "lon": -84.3973146727692
+            }
+        </item>
+        <item>
+            {
+            "id": 4,
+            "name": \"Howey Physics Bldg\",
+            "lat": 33.77764950156022,
+            "lon": -84.39856028626328
+            }
+        </item>
+        <item>
+            {
+            "id": 5,
+            "name": \"Instructional Center\",
+            "lat": 33.77561722342118,
+            "lon": -84.40124980160452
+            }
+        </item>
+        <item>
+            {
+            "id": 6,
+            "name": \"Klaus Advanced Computing Building\",
+            "lat": 33.77723429176723,
+            "lon": -84.39579364393383
+            }
+        </item>
+        <item>
+            {
+            "id": 7,
+            "name": \"Scheller College of Business\",
+            "lat": 33.776599277929385,
+            "lon": -84.38771925495783
+            }
+        </item>
+        <item>
+            {
+            "id": 8,
+            "name": \"Skiles Classroom Building"\",
+            "lat": 33.77371642718144,
+            "lon": -84.3959961881104
+            }
+        </item>
+    </array>
+
+
+</resources>

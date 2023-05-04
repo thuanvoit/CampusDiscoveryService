@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Event.EventViewer">
+
+
+    <ImageView
+        android:id="@+id/eventImageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/activity_default_image"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventImageView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_padding">
+
+            <TextView
+                android:id="@+id/subjectTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/event_viewer_button_space"
+                android:text="Event Subject"
+                android:textColor="@color/black"
+                android:textSize="@dimen/event_viewer_subject_text_size"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/hostTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/event_viewer_button_space"
+                android:text="Host"
+                android:textColor="@color/black"
+                android:textSize="@dimen/event_viewer_text_size" />
+
+            <TextView
+                android:id="@+id/locationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/event_viewer_button_space"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/event_viewer_text_size" />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/event_viewer_button_space"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/event_viewer_text_size" />
+
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/event_viewer_button_space"
+                android:text="Time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/event_viewer_text_size" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ededed"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/willgoTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/event_viewer_button_space"
+                    android:text="Event Will Go"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/event_viewer_text_size" />
+
+                <TextView
+                    android:id="@+id/maygoTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/event_viewer_button_space"
+                    android:text="Event May Go"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/event_viewer_text_size" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textViewer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/event_viewer_button_space"
+                android:text="Information:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/event_viewer_text_size" />
+
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="5dp"
+                android:scrollbars="vertical"
+                android:text="Some text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/event_viewer_text_size" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/cancelrsvpButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_image_button"
+            android:drawableTop="@drawable/ic_baseline_do_not_disturb_alt_24"
+            android:text="Cancel"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/rsvpButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_image_button"
+            android:drawableTop="@drawable/ic_baseline_calendar_today_24"
+            android:text="@string/event_viewer_rsvp_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/potentialrsvpButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_image_button"
+            android:drawableTop="@drawable/ic_baseline_access_alarms_24"
+            android:text="@string/event_viewer_mightgo_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/attendingListButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_image_button"
+            android:drawableTop="@drawable/ic_baseline_people_24"
+            android:text="@string/event_viewer_attendeelist_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/potentialListButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_image_button"
+            android:drawableTop="@drawable/ic_baseline_question_mark_24"
+            android:text="@string/event_viewer_maygo_attendeelist_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/inviteButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_image_button"
+            android:drawableTop="@drawable/ic_baseline_email_24"
+            android:text="@string/invite_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+
+    </LinearLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linearLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:padding="@dimen/element_button_margin"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent">-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/cancelrsvpButton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="@dimen/element_button_margin"-->
+    <!--            android:layout_marginRight="@dimen/element_button_margin"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:text="@string/event_viewer_cancel_rsvp_button" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/rsvpButton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="@dimen/element_button_margin"-->
+    <!--            android:layout_marginRight="@dimen/element_button_margin"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:text="@string/event_viewer_rsvp_button" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/potentialrsvpButton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="@dimen/element_button_margin"-->
+    <!--            android:layout_marginRight="@dimen/element_button_margin"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:text="@string/event_viewer_mightgo_button" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/attendingListButton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="@dimen/element_button_margin"-->
+    <!--            android:layout_marginRight="@dimen/element_button_margin"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:text="@string/event_viewer_attendeelist_button" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/potentialListButton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="@dimen/element_button_margin"-->
+    <!--            android:layout_marginRight="@dimen/element_button_margin"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:text="@string/event_viewer_maygo_attendeelist_button" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/inviteButton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:text="@string/invite_button" />-->
+
+
+    <!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="welcome_screen_button_text_size">18dp</dimen>
+    <dimen name="screen_padding">20dp</dimen>
+    <dimen name="element_bottom_margin">10dp</dimen>
+    <dimen name="element_button_margin">5dp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+    <dimen name="event_viewer_button_space">10dp</dimen>
+    <dimen name="event_viewer_subject_text_size">20dp</dimen>
+    <dimen name="event_viewer_text_size">16dp</dimen>
+</resources>

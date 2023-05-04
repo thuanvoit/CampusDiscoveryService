@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--    Yellow-Amber color set-->
+    <color name="dark_yellow">#FFA000</color>
+    <color name="light_yellow">#FFECB3</color>
+    <color name="primary_yellow">#FFC107</color>
+    <color name="dark_grey">#212121</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="grey">#757575</color>
+    <color name="light_grey">#BDBDBD</color>
+
+    <color name="light_red">#FF5858</color>
+</resources>
